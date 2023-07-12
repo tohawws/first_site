@@ -1,0 +1,134 @@
+.product_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin-top: 48px;
+  position: relative;
+}
+
+.img_bezFona {
+  background-color: #f7e4e2;
+  width: 360px;
+  height: 420px;
+}
+
+.product_name {
+  color: #000;
+  font-size: 13px;
+  font-family: Lato;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px 0 16px;
+  margin-bottom: 12px;
+  margin-top: 25px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  color: #5d5d5d;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 300;
+  padding: 0 16px 0 16px;
+  margin-bottom: 18px;
+}
+
+.price {
+  display: flex;
+  width: 52px;
+  flex-direction: column;
+  color: #f16d7f;
+  font-size: 16px;
+  font-family: Lato;
+  padding-bottom: 20px;
+  padding: 0 16px 24px 16px;
+}
+
+.product_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  background: #f8f8f8;
+  position: relative;
+  display: inline-block;
+  max-width: 580px;
+}
+
+.product_container img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.product_container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 420px;
+}
+
+.product_container:hover img {
+  opacity: 0.7;
+}
+
+.product_container:hover .overlay {
+  opacity: 1;
+}
+
+.product_container .text_bg {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product_container .text_bg:hover {
+  text-decoration: underline;
+}
+
+.product_container .text_bg img {
+  margin-right: 5px;
+  max-width: 20px;
+  height: auto;
+}
+
+.btn_bottom {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.LoadMore {
+  padding: 15px 39px;
+  color: #f26376;
+  font-size: 16px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #ff6a6a;
+  background: #fff;
+  cursor: pointer;
+}
+
+.LoadMore:hover {
+  background: #f16d7f;
+  color: #ffffff;
+}
